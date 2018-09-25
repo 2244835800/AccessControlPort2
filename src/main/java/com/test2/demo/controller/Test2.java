@@ -17,6 +17,7 @@ public class Test2 {
 
     @GetMapping("/index")
     public String require() {
-        return "index";
+        System.out.println("sdfs");
+        return "index.html";
     }
 }

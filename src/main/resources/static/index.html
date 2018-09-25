@@ -1,1 +1,23 @@
+
+<body>
 121
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script >
+    $.ajax({
+        url:"http://localhost:8082",
+        success:function(e){
+            console.log("localhost:8082 yes"+e);
+        }
+    })
+    $.ajax({
+        url:"http://localhost:8081",
+        success:function(e){
+            console.log("localhost:8081 yes"+e);
+        },
+        error:function(e){
+            console.log("localhost:8081 err"+e);
+        }
+    })
+
+</script>
